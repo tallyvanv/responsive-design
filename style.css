@@ -1,0 +1,60 @@
+@media only screen and (max-width: 300px) {
+    body {
+        background-color: red;
+    }
+    div {
+        display: block;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    body {
+        background-color: green;
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #small {
+        max-width: 66.66%;
+    }
+    #medium {
+        max-width: 33.33%;
+    }
+    #large {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    #container {
+        display: flex;
+        flex-wrap: nowrap;
+        /*justify-content: space-evenly;*/
+    }
+
+    #small, #medium, #large {
+        max-width: 40%;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
